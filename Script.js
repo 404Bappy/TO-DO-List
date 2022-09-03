@@ -17,3 +17,11 @@ let createTask = function (task) {
 
     return listItem;
 }
+
+let addTask = function (event) {
+    event.preventDefault();
+    let listItem = createTask(newTask.value);
+    todoUl.appendChild(listItem);
+    newTask.value = "";
+    bindInCompleteItems(listItem, completeTask);
+}
