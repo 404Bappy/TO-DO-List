@@ -23,5 +23,6 @@ let addTask = function (event) {
     let listItem = createTask(newTask.value);
     todoUl.appendChild(listItem);
     newTask.value = "";
+    //bind list
     bindInCompleteItems(listItem, completeTask);
 }
