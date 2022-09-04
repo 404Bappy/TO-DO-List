@@ -26,3 +26,16 @@ let addTask = function (event) {
     //bind list
     bindInCompleteItems(listItem, completeTask);
 }
+
+let completeTask = function () {
+    let listItem = this.parentNode;
+    let deleteBtn = document.createElement('button');
+    deleteBtn.innerText = 'Delete';
+    deleteBtn.className = 'delete';
+    listItem.appendChild(deleteBtn);
+
+    let checkBox = listItem.querySelector('input[type="checkbox"]');
+    checkBox.remove();
+    completeUl.appendChild(listItem);
+    bindCompleteItems(listItem, deleteTask);
+}
