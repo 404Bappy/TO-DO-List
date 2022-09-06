@@ -39,3 +39,9 @@ let completeTask = function () {
     completeUl.appendChild(listItem);
     bindCompleteItems(listItem, deleteTask);
 }
+
+let deleteTask = function () {
+    let listItem = this.parentNode;
+    let ul = listItem.parentNode;
+    ul.removeChild(listItem);
+}
