@@ -45,3 +45,8 @@ let deleteTask = function () {
     let ul = listItem.parentNode;
     ul.removeChild(listItem);
 }
+
+let bindInCompleteItems = function (taskItem, checkboxClick) {
+    let checkBox = taskItem.querySelector('input[type="checkbox"]');
+    checkBox.onchange = checkboxClick;
+}
