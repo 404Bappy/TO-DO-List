@@ -56,3 +56,6 @@ let bindCompleteItems = function (taskItem, deleteButtonClick) {
     deleteButton.onclick = deleteButtonClick;
 }
 
+for (let i = 0; i < todoUl.children.length; i++) {
+    bindInCompleteItems(todoUl.children[i], completeTask);
+}
