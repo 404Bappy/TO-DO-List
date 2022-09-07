@@ -50,3 +50,9 @@ let bindInCompleteItems = function (taskItem, checkboxClick) {
     let checkBox = taskItem.querySelector('input[type="checkbox"]');
     checkBox.onchange = checkboxClick;
 }
+
+let bindCompleteItems = function (taskItem, deleteButtonClick) {
+    let deleteButton = taskItem.querySelector('.delete');
+    deleteButton.onclick = deleteButtonClick;
+}
+
