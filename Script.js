@@ -63,3 +63,5 @@ for (let i = 0; i < todoUl.children.length; i++) {
 for (let i = 0; i < completeUl.children.length; i++) {
     bindCompleteItems(completeUl.children[i], deleteTask);
 }
+
+form.addEventListener('submit', addTask);
